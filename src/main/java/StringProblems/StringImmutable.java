@@ -1,3 +1,5 @@
+package StringProblems;
+
 public class StringImmutable {
     public static void main(String[] args) {
         String a = "abc";

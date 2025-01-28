@@ -1,3 +1,5 @@
+package StringProblems;
+
 public class VowelReplacer {
     public static void main(String[] args) {
         String input = "DNA DNA DNA DNA DNA";

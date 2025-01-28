@@ -1,3 +1,5 @@
+package StringProblems;
+
 public class FindElement {
     private static int searchElement;
 

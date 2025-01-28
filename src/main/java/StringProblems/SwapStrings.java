@@ -1,8 +1,8 @@
-/**
+package StringProblems; /**
  * Java program to swap two strings without using a temporary
  * variable.
  **/
-import java.util.*;
+
 public class SwapStrings
 {
     public static void main(String args[]) {

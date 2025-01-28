@@ -1,3 +1,5 @@
+package StringProblems;
+
 public class DuplicateWord {
     public static void main(String[] args) {
         String string = "Big black bug bit a big black dog on his big black nose";

@@ -1,3 +1,5 @@
+package StringProblems;
+
 public class TransformingString {
 
     public static void main(String[] args) {

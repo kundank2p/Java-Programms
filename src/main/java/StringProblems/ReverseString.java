@@ -1,3 +1,5 @@
+package StringProblems;
+
 public class ReverseString {
     public static void main(String[] args) {
         String e = "this is a new code" ;

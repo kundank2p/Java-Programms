@@ -1,3 +1,5 @@
+package StringProblems;
+
 public class RemoveDuplicatesWithoutCollections {
     public static void main(String[] args) {
         String input = "testing is important testing";

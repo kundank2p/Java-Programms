@@ -1,3 +1,5 @@
+package StringProblems;
+
 public class PrintVowels {
     public static void main(String[] args) {
         String input = "This is an input string";

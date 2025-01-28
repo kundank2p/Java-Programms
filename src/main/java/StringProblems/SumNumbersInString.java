@@ -1,3 +1,5 @@
+package StringProblems;
+
 public class SumNumbersInString {
     public static void main(String[] args) {
         String input = "iudsu111jkf2sdlkf33";
