@@ -2,7 +2,8 @@ package StringProblems;
 
 import java.util.HashMap;
 
-public class countCharacters {
+public class CharactersCountUsingCollection
+{
     public static void main(String[] args) {
         String input = "MADAM";
         HashMap<Character,Integer> frequencyMap = new HashMap<Character,Integer>();
