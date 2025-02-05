@@ -4,12 +4,15 @@ public class CharactersCount {
 
     public static void main(String[] args) {
 
-        String input = "JAVA is Amazing";
+        String str = "JAVA is Amazing";
+        String input = str.toLowerCase();
 
-        long count = input.chars().filter(ch -> ch == 'A' || ch == 'a').count();
-       long  count1 = input.chars().filter(ch->ch=='A'|| ch == 'a').count();
+//        long count = input.chars().filter(ch -> ch == 'A' || ch == 'a').count();
 
-        System.out.println("Number of 'A's: " + count1);
+        int count1 =  input.length()-input.replaceAll("a", "").length();
+
+
+        System.out.println("Number of 'A's: " +count1);
 
     }
 

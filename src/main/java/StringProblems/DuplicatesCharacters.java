@@ -1,7 +1,7 @@
 package StringProblems;
 import java.util.*;
 
-public class PrintDuplicatesCharacters {
+public class DuplicatesCharacters {
 
     public static void printDuplicates(String str)
     {
