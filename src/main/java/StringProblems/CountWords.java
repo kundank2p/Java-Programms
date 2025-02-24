@@ -9,13 +9,25 @@ public class CountWords {
        Map<String,Integer> map = new  HashMap<String,Integer>();
        int count = 1;
        String[] array = Str.split(" ");
-       for (int i = 0; i<array.length; i++){
-           if (!map.containsKey(array[i])) {
-               map.put(array[i], count);
-           }   else        {
-              map.put(array[i], (map.get(array[i])+1));
-           }
-       }
+
+       //Enhanced for loop
+        for (String s : array) {
+            if (!map.containsKey(s)) {
+                map.put(s, count);
+            } else {
+                map.put(s, (map.get(s) + 1));
+            }
+        }
+
+        //Normal for loop
+//        for (int i = 0; i<array.length; i++){
+//            if (!map.containsKey(array[i])) {
+//                map.put(array[i], count);
+//            }   else        {
+//                map.put(array[i], (map.get(array[i])+1));
+//            }
+//        }
+
            for (String x : map.keySet())
            {
                System.out.println("The count of the word  " +x+" is " +map.get(x));
