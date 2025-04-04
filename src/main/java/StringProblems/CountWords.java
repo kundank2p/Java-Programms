@@ -19,14 +19,6 @@ public class CountWords {
             }
         }
 
-        //Normal for loop
-//        for (int i = 0; i<array.length; i++){
-//            if (!map.containsKey(array[i])) {
-//                map.put(array[i], count);
-//            }   else        {
-//                map.put(array[i], (map.get(array[i])+1));
-//            }
-//        }
 
            for (String x : map.keySet())
            {
