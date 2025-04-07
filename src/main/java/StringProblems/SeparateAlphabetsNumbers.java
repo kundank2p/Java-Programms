@@ -1,3 +1,5 @@
+package StringProblems;
+
 public class SeparateAlphabetsNumbers {
     public static void main(String[] args) {
         String input = "abc123xyz456";  // Example input
