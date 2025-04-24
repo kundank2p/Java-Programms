@@ -1,3 +1,5 @@
+package Arrays;
+
 import java.util.HashSet;
 
 public class PrintDuplicateElementsArray {
@@ -13,6 +15,7 @@ public class PrintDuplicateElementsArray {
                 duplicates.add(num);
             }
         }
+        System.out.println("Unique elements in given array: " + uniqueElements);
         System.out.println("Duplicate elements in given array: " + duplicates);
     }
 }
