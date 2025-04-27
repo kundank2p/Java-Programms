@@ -1,8 +1,8 @@
-package StringProblems;
+package Collections;
 
 import java.util.*;
 
-class DuplicateWord {
+class MainC {
     public static void main(String[] args) {
         String input = "Java is Great. Java is Object-Oriented. Java rocks";
 
@@ -24,12 +24,12 @@ class DuplicateWord {
         }
         System.out.println(map);
 
-//        // If you want to print duplicates through Map.Entry
-//        System.out.println("Duplicate words are:");
-//        for (Map.Entry<String, Integer> entry : map.entrySet()) {
-//            if (entry.getValue() > 1) {
-//                System.out.println(entry.getKey() +" : " +entry.getValue());
-//            }
-//        }
+        // If you want to print only duplicates:
+        System.out.println("Duplicate words are:");
+        for (Map.Entry<String, Integer> entry : map.entrySet()) {
+            if (entry.getValue() > 1) {
+                System.out.println(entry.getKey() +" : " +entry.getValue());
+            }
+        }
     }
 }
