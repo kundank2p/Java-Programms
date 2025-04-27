@@ -32,21 +32,21 @@ public class SetExample {
         fruits.add("Apple");
         fruits.add("Grapes");
         fruits.add("Guava");
-        System.out.println("size of the set : " +fruits.size());
+        System.out.println("size of the set : " + fruits.size());
 
-        for (String x:fruits){
+        for (String x : fruits) {
             System.out.println(x);
         }
 
-        System.out.println("After Addding : "+fruits);
+        System.out.println("After Addding : " + fruits);
 
         fruits.remove("Banana");
-        System.out.println("After Removing : "+fruits);
-        System.out.println("size of the set : " +fruits.size());
+        System.out.println("After Removing : " + fruits);
+        System.out.println("size of the set : " + fruits.size());
         System.out.println(fruits.contains("Grapes"));
         fruits.clear();
 
-        System.out.println("List after clear : "+fruits);
+        System.out.println("List after clear : " + fruits);
 
     }
 }

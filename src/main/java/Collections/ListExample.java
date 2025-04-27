@@ -13,7 +13,8 @@ package Collections;
 //      Instead, each element, called a node, contains actual data and a reference (pointer) to both the previous and the next node on the list.
 //
 //      LinkedListVector is a class in Java that implements the List interface and works like an ArrayList, but with one key difference—it is synchronized.
-//      This means it is thread-safe and can be safely used in multithreaded environments. However, because of this synchronization,Vector is usually slower than ArrayList in single threaded situations.
+//      This means it is thread-safe and can be safely used in multithreaded environments.
+//      However, because of this synchronization,Vector is usually slower than ArrayList in single threaded situations.
 
 //      Stack is a class in Java that represents a Last-In, First-Out (LIFO) data structure.
 //      It extends the Vector class and provides methods like push() to add elements, pop() to remove the top element, and peek() to look at the top element without removing it.
@@ -31,25 +32,25 @@ public class ListExample {
         fruits.add("Mango");
         fruits.add("Banana");
         fruits.add("Apple");
-        System.out.println("size of the list : " +fruits.size());
+        System.out.println("size of the list : " + fruits.size());
 
-        for (String fruit:fruits){
+        for (String fruit : fruits) {
             System.out.println(fruit);
         }
 
-        System.out.println("After Addding : "+fruits);
+        System.out.println("After Addding : " + fruits);
 
         fruits.remove("Banana");
-        System.out.println("After Removing : "+fruits);
-        System.out.println("Element at Index 1 : "+fruits.get(1));
-        System.out.println("size of the list : " +fruits.size());
-        fruits.set(1,"Grapes");
-        System.out.println("Element at Index 1 : "+fruits.get(1));
+        System.out.println("After Removing : " + fruits);
+        System.out.println("Element at Index 1 : " + fruits.get(1));
+        System.out.println("size of the list : " + fruits.size());
+        fruits.set(1, "Grapes");
+        System.out.println("Element at Index 1 : " + fruits.get(1));
         System.out.println(fruits.contains("Grapes"));
         System.out.println(fruits.indexOf("Grapes"));
         fruits.clear();
 
-        System.out.println("List after clear : "+fruits);
+        System.out.println("List after clear : " + fruits);
 
 
     }
