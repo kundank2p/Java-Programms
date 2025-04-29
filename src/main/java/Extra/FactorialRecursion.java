@@ -1,3 +1,5 @@
+package Extra;
+
 public class FactorialRecursion {
     public static void main(String[] args) {
         int n = 7;

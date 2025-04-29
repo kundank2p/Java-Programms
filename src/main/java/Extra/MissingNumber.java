@@ -1,3 +1,5 @@
+package Extra;
+
 public class MissingNumber {
     public static void main(String[] args) {
         int total = 9; // Total number of elements expected (1 to 9)

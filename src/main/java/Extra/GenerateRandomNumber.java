@@ -1,4 +1,4 @@
-// Java program to generate a random integer
+package Extra;// Java program to generate a random integer
 // within this specific range
 
 import java.util.concurrent.ThreadLocalRandom;
