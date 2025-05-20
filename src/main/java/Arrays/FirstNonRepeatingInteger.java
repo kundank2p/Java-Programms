@@ -8,7 +8,7 @@ import java.util.Map;
 
 public class FirstNonRepeatingInteger {
     public static void main(String[] args) {
-        int[] arr = {3, 5, 1, 7,8,1,3, 9};
+        int[] arr = {3, 5, 1, 7,8,1,3, 5, 9};
         System.out.println(firstNonRepeating(arr));
     }
     public static int firstNonRepeating(int[] arr) {

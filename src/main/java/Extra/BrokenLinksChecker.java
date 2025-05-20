@@ -43,7 +43,7 @@ public class BrokenLinksChecker {
             int nullHref = 0, invalid = 0, duplicate = 0, validChecked = 0;
 
             for (WebElement link : links) {
-                String href = link.getAttribute("href");
+                String href = link.getDomAttribute("href");
 
                 if (href == null) {
                     nullHref++;
@@ -96,7 +96,7 @@ public class BrokenLinksChecker {
             // Fallback to GET if HEAD fails
             try {
                 HttpURLConnection connection = (HttpURLConnection) new URL(linkUrl).openConnection();
-                connection.setRequestMethod("GET");
+                connection.setRequestMethod("HEAD");
                 connection.setConnectTimeout(5000);
                 connection.setReadTimeout(5000);
                 connection.connect();
