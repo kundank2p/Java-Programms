@@ -53,7 +53,7 @@ public class ArraysExample {
 
         // 10. Palindrome check
         String palin = "madam";
-        boolean isPalindrome = palin.equals(new StringBuilder(palin).reverse().toString());
+        boolean isPalindrome = palin.contentEquals(new StringBuilder(palin).reverse());
         System.out.println("10. Is Palindrome? " + isPalindrome);
 
         // 11. Remove vowels

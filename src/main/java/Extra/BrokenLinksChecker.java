@@ -21,13 +21,7 @@ public class BrokenLinksChecker {
         driver.manage().window().maximize();
 
         String[] urlsToCheck = {
-                "https://www.moeving.com",
-                "https://moeving.com/what-we-do/",
-                "https://moeving.com/our-impact/",
-                "https://moeving.com/ev-showroom/",
-                "https://moeving.com/news/",
-                "https://moeving.com/join-us/",
-                "https://moeving.com/contact/"
+                "https://www.asterdmhealthcare.com/shaping-the-future-of-healthcare"
         };
 
         Set<String> checkedLinks = new HashSet<>();
