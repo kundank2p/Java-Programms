@@ -1,0 +1,38 @@
+// WAP to count alphabets, digits, and special characters in a string
+
+package Strings;
+
+public class CountCharactersDigitsSpecial {
+
+    public static void main(String[] args) {
+
+        String str = "Auto@123Test#";
+
+        int alphabets = 0;
+        int digits = 0;
+        int specialChars = 0;
+
+        for (char ch : str.toCharArray()) {
+
+            // Check alphabet
+            if (Character.isLetter(ch)) {
+                alphabets++;
+            }
+
+            // Check digit
+            else if (Character.isDigit(ch)) {
+                digits++;
+            }
+
+            // Check special character
+            else {
+                specialChars++;
+            }
+        }
+
+        System.out.println("String: " + str);
+        System.out.println("Alphabets Count: " + alphabets);
+        System.out.println("Digits Count: " + digits);
+        System.out.println("Special Characters Count: " + specialChars);
+    }
+}
