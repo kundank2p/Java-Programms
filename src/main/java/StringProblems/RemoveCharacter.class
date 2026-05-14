@@ -1,0 +1,23 @@
+// Remove a character from a string
+
+package Strings;
+
+public class RemoveCharacter {
+
+    public static void main(String[] args) {
+
+        String str = "automation";
+        char ch = 'a';
+
+        String result = removeCharacter(str, ch);
+
+        System.out.println("Original String: " + str);
+        System.out.println("After Removing '" + ch + "': " + result);
+    }
+
+    public static String removeCharacter(String str, char ch) {
+
+        // Replace character with empty string
+        return str.replace(String.valueOf(ch), "");
+    }
+}
