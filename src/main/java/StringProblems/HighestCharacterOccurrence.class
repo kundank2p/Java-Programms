@@ -1,0 +1,45 @@
+// Program to print highest occurring character in a string
+
+package Strings;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class HighestCharacterOccurrence {
+
+    public static void main(String[] args) {
+
+        String str = "automationtesting";
+
+        findHighestOccurringCharacter(str);
+    }
+
+    public static void findHighestOccurringCharacter(String str) {
+
+        Map<Character, Integer> freqMap = new HashMap<>();
+
+        // Count frequency of each character
+        for (char ch : str.toCharArray()) {
+
+            if (ch != ' ') { // Ignore spaces
+                freqMap.put(ch, freqMap.getOrDefault(ch, 0) + 1);
+            }
+        }
+
+        char maxChar = ' ';
+        int maxCount = 0;
+
+        // Find highest occurring character
+        for (Map.Entry<Character, Integer> entry : freqMap.entrySet()) {
+
+            if (entry.getValue() > maxCount) {
+
+                maxCount = entry.getValue();
+                maxChar = entry.getKey();
+            }
+        }
+
+        System.out.println("Highest occurring character: " + maxChar);
+        System.out.println("Number of occurrences: " + maxCount);
+    }
+}
