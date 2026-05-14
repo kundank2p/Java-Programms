@@ -1,0 +1,41 @@
+// WAP to check if a string contains digit or special character
+
+package Strings;
+
+public class CheckDigitOrSpecialCharacter {
+
+    public static void main(String[] args) {
+
+        String str = "Auto@123";
+
+        boolean hasDigit = false;
+        boolean hasSpecialChar = false;
+
+        for (char ch : str.toCharArray()) {
+
+            // Check digit
+            if (Character.isDigit(ch)) {
+                hasDigit = true;
+            }
+
+            // Check special character
+            else if (!Character.isLetter(ch)) {
+                hasSpecialChar = true;
+            }
+        }
+
+        System.out.println("String: " + str);
+
+        if (hasDigit) {
+            System.out.println("Contains Digit");
+        } else {
+            System.out.println("Does Not Contain Digit");
+        }
+
+        if (hasSpecialChar) {
+            System.out.println("Contains Special Character");
+        } else {
+            System.out.println("Does Not Contain Special Character");
+        }
+    }
+}
